@@ -1,0 +1,18 @@
+<table cellpadding="10" cellspacing="0" border="1">
+  <tr>
+    <td>
+      No.
+    </td>
+    <td>
+      Name
+    </td>
+  </tr>
+  <tr *ngFor="let category of categoryList; index as categoryIndex;">
+    <td>
+      {{ (categoryIndex + 1) }}
+    </td>
+    <td>
+      {{ category }}
+    </td>
+  </tr>
+</table>
