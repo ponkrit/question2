@@ -1,3 +1,6 @@
+<div style="margin: 20px 0;">
+  Keyword: <input type="text" [(ngModel)]="keyword">
+</div>
 <table cellpadding="10" cellspacing="0" border="1">
   <tr>
     <td>
@@ -7,7 +10,7 @@
       Name
     </td>
   </tr>
-  <tr *ngFor="let category of categoryList; index as categoryIndex;">
+  <tr *ngFor="let category of categoryList | filter: keyword; index as categoryIndex;">
     <td>
       {{ (categoryIndex + 1) }}
     </td>
